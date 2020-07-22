@@ -7,8 +7,6 @@ require 'nokogiri'
       title = project.css("h2.bbcard_name strong a").text
       projects[title.to_sym] = {}
     end
-
-    # return the projects hash
     projects
   end
 end
